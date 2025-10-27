@@ -643,11 +643,11 @@ nav {
     height: 3rem;
     width: auto;
     transition: all 0.3s ease;
-    filter: grayscale(100%) brightness(0.8);
+    filter: grayscale(100%) brightness(0.7);
 }
 
 .social-icon:hover img {
-    filter: grayscale(0%) brightness(1);
+    filter: grayscale(0%) brightness(1.2) sepia(0.3) saturate(1.5) hue-rotate(25deg);
     transform: translateY(-5px);
 }
 
