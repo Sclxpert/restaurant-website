@@ -140,7 +140,7 @@
                         <p>Phone: 0758000444</p>
                         <p>Email: cobblestonehousekenya@gmail.com</p>
                         <div class="map-container">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.779824266558!2d36.7879!3d-1.2109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTInMzkuMiJTIDM2wrA0NycxNi40IkU!5e0!3m2!1sen!2ske!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.754982371976!2d36.83531627496756!3d-1.1955839353965474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3d004df5c18f%3A0xd5789bbd3f6ea2c6!2sCobblestone%20House!5e0!3m2!1sen!2ske!4v1730000000000!5m2!1sen!2ske" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                     <div class="hours">
@@ -151,13 +151,38 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <h2>Contact Us</h2>
-                    <h3 class="contact-subtitle">We want to hear from you!</h3>
+                    <h2>We want to hear from you!</h2>
                     <form id="contact-form">
-                        <input type="text" placeholder="Name" required>
-                        <input type="email" placeholder="Email" required>
-                        <textarea placeholder="Message" required></textarea>
-                        <button type="submit" class="btn">Send Message</button>
+                        <div class="form-group">
+                            <label>Full Name <span class="required-indicator">(Required)</span></label>
+                            <p class="field-label">Full Name</p>
+                            <input type="text" placeholder="E.g. John Doe" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Email <span class="required-indicator">(Required)</span></label>
+                                <p class="field-label">Email</p>
+                                <input type="email" placeholder="E.g. john@doe.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <p class="field-label">Phone</p>
+                                <input type="tel" placeholder="E.g. +1 3004005000">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Message <span class="required-indicator">(Required)</span></label>
+                            <p class="message-help">Please let us know what's on your mind. Have a question for us? Ask away.</p>
+                            <textarea placeholder="Enter your message..." required></textarea>
+                        </div>
+                        <div class="form-group consent-group">
+                            <label>Consent <span class="required-indicator">(Required)</span></label>
+                            <div class="checkbox-wrapper">
+                                <input type="checkbox" id="consent" required>
+                                <label for="consent">Yes, I'd like to receive text messages from 12 Cuts Brazilian Steakhouse with news and updates. I understand that message frequency varies and standard message rates apply. I also want to subscribe to email updates for the latest news and exclusive offers. - <a href="#" class="privacy-link">Privacy Policy</a></label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Send Message</button>
                     </form>
                 </div>
             </div>
