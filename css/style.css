@@ -990,7 +990,45 @@ footer {
     color: var(--primary-color);
 }
 
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #c19a6b 0%, #8b7355 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(193, 154, 107, 0.4);
+    z-index: 999;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(193, 154, 107, 0.6);
+}
+
+.whatsapp-float i {
+    font-size: 2rem;
+    color: #fff;
+}
+
 @media (max-width: 768px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .whatsapp-float i {
+        font-size: 1.6rem;
+    }
+}
     .modal-content {
         padding: 30px 20px;
         width: 95%;
