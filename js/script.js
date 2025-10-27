@@ -55,3 +55,30 @@ document.getElementById('reservation-form')?.addEventListener('submit', function
     closeReservationModal();
     this.reset();
 });
+
+function toggleMobileMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuToggle = document.querySelector('.mobile-menu-toggle i');
+    
+    mobileMenu.classList.toggle('active');
+    
+    if (mobileMenu.classList.contains('active')) {
+        menuToggle.classList.remove('fa-bars');
+        menuToggle.classList.add('fa-times');
+        document.body.style.overflow = 'hidden';
+    } else {
+        menuToggle.classList.remove('fa-times');
+        menuToggle.classList.add('fa-bars');
+        document.body.style.overflow = 'auto';
+    }
+}
+
+function closeMobileMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuToggle = document.querySelector('.mobile-menu-toggle i');
+    
+    mobileMenu.classList.remove('active');
+    menuToggle.classList.remove('fa-times');
+    menuToggle.classList.add('fa-bars');
+    document.body.style.overflow = 'auto';
+}
