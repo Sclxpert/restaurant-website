@@ -13,19 +13,22 @@
 <body>
     <!-- Header with Video Background -->
     <header class="video-header">
-        <video autoplay muted loop id="myVideo">
+        <video autoplay muted loop playsinline id="myVideo">
             <source src="video/restaurant-bg.mp4" type="video/mp4">
         </video>
         <nav>
             <div class="logo">
                 <img src="img/cobblestone-logo.png" alt="Cobblestone House Logo">
             </div>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#menu">Menu</a>
-                <a href="#events">Events</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#contact">Contact</a>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="mobileMenu">
+                <a href="#about" onclick="closeMobileMenu()">About</a>
+                <a href="#menu" onclick="closeMobileMenu()">Menu</a>
+                <a href="#events" onclick="closeMobileMenu()">Events</a>
+                <a href="#gallery" onclick="closeMobileMenu()">Gallery</a>
+                <a href="#contact" onclick="closeMobileMenu()">Contact</a>
             </div>
             <div class="nav-button">
                 <button class="btn" onclick="openReservationModal()">Reserve a Table</button>

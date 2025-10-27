@@ -79,6 +79,21 @@ nav {
     gap: 40px;
 }
 
+.mobile-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+}
+
+.mobile-menu-toggle:hover {
+    color: var(--accent-color);
+}
+
 .nav-links a {
     color: var(--text-light);
     text-decoration: none;
@@ -838,8 +853,56 @@ footer {
         font-size: 3rem;
     }
     
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
     .nav-links {
-        display: none;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.98);
+        flex-direction: column;
+        padding: 80px 30px 30px;
+        gap: 30px;
+        transition: left 0.3s ease;
+        z-index: 99;
+        border-right: 2px solid var(--accent-color);
+    }
+    
+    .nav-links.active {
+        left: 0;
+    }
+    
+    .nav-links a {
+        font-size: 1.5rem;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    nav {
+        padding: 15px 20px;
+    }
+    
+    .nav-button .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 20px;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+        padding: 15px 30px;
+        font-size: 1rem;
     }
     
     .dishes-grid,
@@ -865,6 +928,35 @@ footer {
         padding: 0 20px;
     }
     
+    .experience,
+    .about,
+    .featured,
+    .events,
+    .gallery,
+    .contact {
+        padding: 60px 0;
+    }
+    
+    .hero-content p {
+        font-size: 1.2rem;
+        padding: 0 20px;
+    }
+    
+    .experience-item p,
+    .about-text p {
+        font-size: 1rem;
+    }
+    
+    nav .logo img {
+        height: 70px;
+    }
+    
+    .btn {
+        padding: 15px 30px;
+        font-size: 1rem;
+        min-height: 48px;
+    }
+    
     .social-icons {
         gap: 30px;
     }
@@ -879,6 +971,59 @@ footer {
     
     .gallery-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 16px;
+    }
+    
+    .reservation-modal input,
+    .reservation-modal textarea {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .section-header h2,
+    .about-text h2,
+    .featured h2,
+    .events h2,
+    .gallery h2,
+    .find-us-on h2 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+    
+    .experience-number {
+        font-size: 4rem;
+    }
+    
+    .experience-item h3 {
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+    }
+    
+    nav .logo img {
+        height: 60px;
+    }
+    
+    .social-icons {
+        gap: 20px;
+    }
+    
+    .social-icon i,
+    .social-icon img {
+        font-size: 2rem;
+        height: 2rem;
     }
 }
 
