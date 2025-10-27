@@ -639,6 +639,18 @@ nav {
     transform: translateY(-5px);
 }
 
+.social-icon img {
+    height: 3rem;
+    width: auto;
+    transition: all 0.3s ease;
+    filter: grayscale(100%) brightness(0.8);
+}
+
+.social-icon:hover img {
+    filter: grayscale(0%) brightness(1);
+    transform: translateY(-5px);
+}
+
 footer {
     background: rgba(26, 26, 26, 0.8);
     padding: 60px 0 30px;
