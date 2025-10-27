@@ -398,6 +398,24 @@ nav {
     margin-bottom: 10px;
 }
 
+.contact-details {
+    margin-top: 40px;
+}
+
+.contact-details h2 {
+    font-size: 3rem;
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--accent-color);
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.contact-details p {
+    color: var(--gray-text);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
 .hours {
     margin-top: 40px;
 }
@@ -407,6 +425,13 @@ nav {
     color: var(--accent-color);
     margin-bottom: 15px;
     font-family: 'Bebas Neue', sans-serif;
+}
+
+.hours p {
+    color: var(--gray-text);
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
 }
 
 .contact-form input,
