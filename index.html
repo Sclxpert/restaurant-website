@@ -36,7 +36,8 @@
             <p>Fine Dining & Elegant Atmosphere</p>
             <div class="hero-buttons">
                 <a href="#menu" class="btn">View Menu</a>
-                <a href="#reservations" class="btn btn-outline">Make Reservation</a>
+                <button class="btn btn-order" onclick="openOrderModal()">Order Now</button>
+                <button class="btn btn-outline" onclick="openReservationModal()">Make Reservation</button>
             </div>
         </div>
     </header>
@@ -237,6 +238,71 @@
             </div>
         </div>
     </footer>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content order-modal">
+            <h2>Choose Your Delivery Option</h2>
+            <div class="delivery-options">
+                <a href="https://glovoapp.com" target="_blank" class="delivery-option">
+                    <div class="delivery-icon glovo-icon">
+                        <span>Glovo</span>
+                    </div>
+                    <span class="delivery-name">Glovo</span>
+                </a>
+                <a href="https://ubereats.com" target="_blank" class="delivery-option">
+                    <div class="delivery-icon ubereats-icon">
+                        <span>Uber Eats</span>
+                    </div>
+                    <span class="delivery-name">Uber Eats</span>
+                </a>
+            </div>
+            <button class="modal-cancel" onclick="closeOrderModal()">
+                <i class="fas fa-times-circle"></i> Cancel
+            </button>
+        </div>
+    </div>
+
+    <!-- Reservation Modal -->
+    <div id="reservationModal" class="modal">
+        <div class="modal-content reservation-modal">
+            <button class="modal-close" onclick="closeReservationModal()">&times;</button>
+            <h2>Make a Reservation</h2>
+            <p class="reservation-subtitle">Whether you're planning a romantic night out, entertaining clients, or just an intimate gathering with friends, few things say "you've got it covered" like having reservations.</p>
+            <p class="reservation-cta">Don't wait. Make your reservations today!</p>
+            <form id="reservation-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>FULL NAME *</label>
+                        <input type="text" placeholder="Your Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>EMAIL *</label>
+                        <input type="email" placeholder="your.email@example.com" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>PHONE NUMBER *</label>
+                        <input type="tel" placeholder="Enter your number" required>
+                    </div>
+                    <div class="form-group">
+                        <label>NUMBER OF GUESTS *</label>
+                        <input type="number" placeholder="2" min="1" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>PREFERRED DATE *</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <label>SPECIAL REQUESTS OR OCCASION</label>
+                    <textarea placeholder="Any dietary restrictions, special occasions (birthday, anniversary), or additional requests..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-reservation-submit">CONFIRM RESERVATION</button>
+            </form>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
