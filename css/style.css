@@ -458,6 +458,26 @@ nav {
     resize: vertical;
 }
 
+.map-container {
+    margin-top: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.map-container iframe {
+    display: block;
+}
+
+.contact-subtitle {
+    font-size: 1.5rem;
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--text-light);
+    margin-bottom: 25px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
 .find-us-on {
     padding: 100px 0;
     background: var(--secondary-color);
