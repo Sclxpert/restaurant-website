@@ -327,6 +327,80 @@ nav {
     line-height: 1.6;
 }
 
+.menu-downloads {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.menu-downloads h3 {
+    font-size: 2.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--text-light);
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.menu-downloads .menu-subtitle {
+    color: var(--accent-color);
+    font-size: 1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.menu-download-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.menu-download-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 40px 30px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.menu-download-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.3);
+    border-color: var(--accent-color);
+}
+
+.menu-download-item i {
+    font-size: 3rem;
+    color: var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+.menu-download-item:hover i {
+    color: var(--accent-hover);
+    transform: scale(1.1);
+}
+
+.menu-download-item .menu-name {
+    font-size: 1.3rem;
+    color: var(--text-light);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.menu-download-item .download-label {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
 .events {
     padding: 120px 0;
     background: var(--secondary-color);
@@ -771,6 +845,11 @@ footer {
     .dishes-grid,
     .events-content {
         grid-template-columns: 1fr;
+    }
+    
+    .menu-download-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
     
     .about-text h2 {
